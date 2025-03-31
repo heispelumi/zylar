@@ -1,0 +1,88 @@
+const products = [
+  {
+    id: 1,
+    name: "Sleeveless Faded Tee",
+    category: "Shirts",
+    price: 70000,
+    image: "https://i.pinimg.com/736x/b8/e1/2d/b8e12d047fd46f851ac9c071b0b8e618.jpg",
+  },
+  {
+    id: 2,
+    name: "Break The Rules  -Stone Wash ",
+    category: "Shirts",
+    gender: "Men",
+    price: 80000,
+    image: "https://i.pinimg.com/474x/ee/8c/19/ee8c198342a93c73020146c2274ac91b.jpg"
+  },
+  {
+    id: 3,
+    name: "Rise -Black",
+    category: "Shirts",
+    gender: "Men",
+    price: 100000,
+    image: "https://i.pinimg.com/474x/7d/ca/1f/7dca1f45b7a97eb00a76e54c2ed98118.jpg",
+  },
+  {
+    id: 4,
+    name: "Maximalist Cap",
+    category: "Caps",
+    gender: "Men",
+    price: 25000,
+    image: "https://i.pinimg.com/474x/a8/42/9a/a8429a4bcb51559abcd74cbd3c8ca003.jpg",
+  },
+  {
+    id: 5,
+    name: "Hypeastro Punk Graphic T Shirt",
+    category: "Shirts",
+    gender: "Men",
+    price: 120000,
+    image: "https://i.pinimg.com/736x/0d/a8/6a/0da86aa5bd7f78fd9cff450273a9541f.jpg",
+  },
+  {
+    id: 6,
+    name: "Cozy Hoodie -Pink",
+    category: "Hoodies",
+    price: 105000,
+    image: "https://i.pinimg.com/736x/87/c0/d1/87c0d1f915d23a9f2ef83054c3d2bf7c.jpg",
+  },
+  {
+    id: 7,
+    name: "Rugged Cap",
+    category: "Caps",
+    price: 30000,
+    image: "https://i.pinimg.com/474x/8a/9e/b8/8a9eb8e8f6a7f83884833802c8af4b34.jpg",
+  },
+  {
+    id: 8,
+    name: "Crop Top Women -White",
+    category: "Shirts",
+    gender: "Women",
+    price: 50000,
+    image: "https://i.pinimg.com/474x/b3/1d/8c/b31d8ca8501a5da0b2a7662df9c736a2.jpg",
+  },
+  {
+    id: 9,
+    name: "Futuristic Zip Hoodie",
+    category: "Hoodies",
+    gender: "Men",
+    price: 140000,
+    image: "https://i.pinimg.com/736x/56/64/6d/56646d3a448810e87229b9f7b7b796c5.jpg",
+  },
+  {
+    id: 10,
+    name: "Bucket Hat",
+    category: "Caps",
+    gender: "Unisex",
+    price: 20000,
+    image: "https://i.pinimg.com/474x/e8/b8/ee/e8b8ee479a436c121020085882026ff9.jpg",
+  },
+  {
+    id: 11,
+    name: "Saints Crop Top",
+    category: "Shirts",
+    price: 50000,
+    image: "https://i.pinimg.com/736x/38/5a/4f/385a4f1a170646c8fb3255bb24246b4e.jpg",
+  },
+];
+
+export default products;
