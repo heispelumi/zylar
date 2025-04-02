@@ -1,6 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom"; // Import CartProvider
 import UserLayout from "./component/Layout/UserLayout";
 import Home from "./pages/Home";
+import CartContent from "./component/Cart/CartContent"; 
 import { Toaster } from "sonner";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -12,47 +13,41 @@ import Confirm from "./pages/Confirm";
 import About from "./pages/About";
 import Allproducts from "./Product/Allproducts";
 import Collection from "./Product/Collection";
-import ProductPage from "./pages/Productpage";
-import ScrollToTop from "./component/ScrollToTop"; // Import Scroll Restoration
-import AdminLayout from "./component/Admin/Adminlayout";
-import Users from "./component/Admin/Users";
-import Orders from "./component/Admin/Orders";
-import Admindashboard from "./component/Admin/Admindashboard";
-import Products from "./component/Admin/Products";
+import Productpage from "./pages/Productpage";
+import ScrollToTop from "./component/ScrollToTop";
+import { CartProvider } from "./component/Cart/CartContext"; // Correct import of useCart
 
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Toaster position="top-right" />
+    <CartProvider> {/* Ensure CartProvider wraps BrowserRouter */}
+      <BrowserRouter>
+        <ScrollToTop />
+        <Toaster position="top-right" />
 
-      <Routes>
-        {/*  User Layout */}
-        <Route path="/" element={<UserLayout />}>
-          <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="order" element={<Order />} />
-          <Route path="helpcenter" element={<Helpcenter />} />
-          <Route path="checkout" element={<Checkout />} />
-          <Route path="confirm" element={<Confirm />} />
-          <Route path="about" element={<About />} />
-          <Route path="allproducts" element={<Allproducts />} />
-          <Route path="collection" element={<Collection />} />
-          <Route path="product/:id" element={<ProductPage />} />
-        </Route>
+        {/* Routes for the app */}
+        <Routes>
+          {/* User Layout */}
+          <Route path="/" element={<UserLayout />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="order" element={<Order />} />
+            <Route path="helpcenter" element={<Helpcenter />} />
+            <Route path="checkout" element={<Checkout />} />
+            <Route path="confirm" element={<Confirm />} />
+            <Route path="about" element={<About />} />
+            <Route path="allproducts" element={<Allproducts />} />
+            <Route path="collection" element={<Collection />} />
 
-               {/*  Admin Layout */}
-        <Route path="/adminlayout" element={<AdminLayout />}>
-     
-          <Route path="admindashboard" element={<Admindashboard />} />
-          <Route path="users" element={<Users />} />
-          <Route path="products" element={<Products />} />
-          <Route path="orders" element={<Orders />} /> 
-        </Route>
-      </Routes>
-    </BrowserRouter>
+            {/* Product page route */}
+            <Route path="product/:id" element={<Productpage />} />
+            {/* Cart route */}
+            <Route path="cartcontent" element={<CartContent />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 
