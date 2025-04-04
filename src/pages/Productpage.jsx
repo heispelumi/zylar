@@ -46,7 +46,7 @@ const Productpage = () => {
         <div className="mt-6">
           <p className="text-lg font-semibold mb-2">Size:</p>
           <div className="flex gap-3">
-            {["S", "M", "L", "XL"].map((size) => (
+            {[ "M", "L", "XL"].map((size) => (
               <button
                 key={size}
                 className={`border px-4 py-2 hover:bg-black hover:text-white transition ${selectedSize === size ? "bg-black text-white" : ""}`}

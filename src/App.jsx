@@ -1,4 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"; // Import CartProvider
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CartProvider } from "./component/Cart/CartContext"; // CartProvider should be inside BrowserRouter
 import UserLayout from "./component/Layout/UserLayout";
 import Home from "./pages/Home";
 import CartContent from "./component/Cart/CartContent"; 
@@ -15,18 +17,18 @@ import Allproducts from "./Product/Allproducts";
 import Collection from "./Product/Collection";
 import Productpage from "./pages/Productpage";
 import ScrollToTop from "./component/ScrollToTop";
-import { CartProvider } from "./component/Cart/CartContext"; // Correct import of useCart
+
 
 function App() {
   return (
-    <CartProvider> {/* Ensure CartProvider wraps BrowserRouter */}
-      <BrowserRouter>
+    // Move BrowserRouter around CartProvider and other components
+    <BrowserRouter>
+      <CartProvider>
         <ScrollToTop />
         <Toaster position="top-right" />
 
         {/* Routes for the app */}
         <Routes>
-          {/* User Layout */}
           <Route path="/" element={<UserLayout />}>
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
@@ -39,15 +41,12 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="allproducts" element={<Allproducts />} />
             <Route path="collection" element={<Collection />} />
-
-            {/* Product page route */}
             <Route path="product/:id" element={<Productpage />} />
-            {/* Cart route */}
             <Route path="cartcontent" element={<CartContent />} />
           </Route>
         </Routes>
-      </BrowserRouter>
-    </CartProvider>
+      </CartProvider>
+    </BrowserRouter>
   );
 }
 
