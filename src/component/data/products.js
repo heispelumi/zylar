@@ -23,6 +23,14 @@ const products = [
     image: "https://i.pinimg.com/474x/7d/ca/1f/7dca1f45b7a97eb00a76e54c2ed98118.jpg",
   },
   {
+    id: 10,
+    name: "A-star Sports Jacket",
+    category: "Shirts",
+    gender: "Men",
+    price: 300000,
+    image: "https://i.pinimg.com/736x/2e/58/5b/2e585bb0a8f139df805daa9c0a9bb36c.jpg",
+  },
+  {
     id: 4,
     name: "Maximalist Cap",
     category: "Caps",

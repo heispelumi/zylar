@@ -24,21 +24,27 @@ const collections = [
       },
       {
         id: 4,
-        name: "Lost In Desert -Black",
-        price: 120000,
-        image: "https://i.pinimg.com/474x/92/de/b9/92deb9680319e17ec6feaa9ed1d1e090.jpg",
+        name: "A-star Sports Jacket",
+        price: 300000,
+        image: "https://i.pinimg.com/736x/2e/58/5b/2e585bb0a8f139df805daa9c0a9bb36c.jpg",
       },
       {
         id: 5,
+        name: "Observe -Black",
+        price: 120000,
+        image: "https://i.pinimg.com/736x/84/be/eb/84beeb857789a030b49035df81c4e602.jpg",
+      },
+      {
+        id: 6,
         name: "Cozy Hoodie -Pink",
         price: 105000,
         image: "https://i.pinimg.com/736x/87/c0/d1/87c0d1f915d23a9f2ef83054c3d2bf7c.jpg",
       },
       {
-        id: 6,
-        name: "Choize Jersey -Black",
+        id: 7,
+        name: "Antidote Tee -White",
         price: 60000,
-        image: "https://i.pinimg.com/474x/4d/be/9e/4dbe9ea1a7e5531e14f755c379ce6248.jpg",
+        image: "https://i.pinimg.com/736x/dc/63/5f/dc635f94e503e9ef0cdf12c1165721e8.jpg",
       },
     ],
   },
@@ -48,7 +54,7 @@ const Collections = () => {
   const navigate = useNavigate();
 
   return (
-    <section className=" pt-[65px] pb-[20px] px-4 lg:px-[150px]">
+    <section className=" pt-[65px] poppins pb-[20px] px-4 lg:px-[150px]">
       <div className="container mx-auto">
         {collections.map((collection, index) => (
           <div key={index} className="mb-12">

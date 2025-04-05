@@ -87,16 +87,16 @@ const CartContent = () => {
                 onClick={() => removeFromCart(item.id)}
                 className="text-black"
               >
-                <FaRegTrashCan className="h-5 w-5" />
+                <FaRegTrashCan className="md:h-5 md:w-5 w-3 h-3" />
               </button>
             </div>
           ))}
 
           {/* Total Price */}
           <div className="border-t ">
-            <div className="flex justify-between items-center text-lg font-semibold mb-4">
+            <div className="flex justify-between items-center text-[15px] md:text-lg font-semibold mb-8">
               <span>Total:</span>
-              <div className="mt-8 space-y-3">
+              <div className="md:mt-8 mt-12 space-y-3">
 
                 <span>₦{calculateTotal().toLocaleString()}</span>
 

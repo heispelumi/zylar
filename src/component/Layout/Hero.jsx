@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const heroImageUrl = "https://i.pinimg.com/736x/39/1a/ab/391aabb6e71e93d66cecc71b10719c9b.jpg"; 
@@ -15,7 +16,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="absolute bottom-10 left-1/2 transform underline -translate-x-1/2 text-white text-center">
 
-
+        <Link to="/allproducts">
         <motion.p
           className="text-sm md:text-lg uppercase poppins tracking-widest"
           initial={{ opacity: 0, y: 20 }}
@@ -24,6 +25,7 @@ const Hero = () => {
         >
           Explore Our New Collection
         </motion.p>
+        </Link>
       </div>
     </div>
   );

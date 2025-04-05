@@ -37,7 +37,7 @@ const About = () => {
             className="w-full md:w-2/2 h-[330px] md:h-[630px] object-cover"
           />
         </div>
-        <div className="flex flex-col justify-center  text-center md:w-2/2 md:text-right pt-[23px] p-8 md:p-16 ">
+        <div className="flex flex-col justify-center  text-center md:w-2/2 md:text-left pt-[23px] p-8 md:p-16 ">
           <h3 className="text-[20px] md:text-[28px] lg:text-[48px]  font-bold tracking-wide">STREET MEETS MINIMALISM</h3>
           <p className="mt-2 md:mt-4 text-[8px] md:text-[12px] poppins leading-relaxed">
           Versatile fashion for every moment—sleek neutrals, standout details, and all-day comfort.

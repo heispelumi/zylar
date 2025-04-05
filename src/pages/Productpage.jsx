@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useCart } from "../component/Cart/CartContext";
 
-
 const Productpage = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -34,7 +33,7 @@ const Productpage = () => {
   const productImage = product?.image || "/path/to/default-image.jpg";
 
   return (
-    <section className="py-16 px-4 lg:px-[150px] flex flex-col md:flex-row items-center">
+    <section className="py-16 poppins px-4 lg:px-[150px] flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2 flex justify-center">
         <img src={productImage} alt={product?.name} className="max-w-[400px] w-full h-auto" />
       </div>
@@ -46,7 +45,7 @@ const Productpage = () => {
         <div className="mt-6">
           <p className="text-lg font-semibold mb-2">Size:</p>
           <div className="flex gap-3">
-            {[ "M", "L", "XL"].map((size) => (
+            {["M", "L", "XL"].map((size) => (
               <button
                 key={size}
                 className={`border px-4 py-2 hover:bg-black hover:text-white transition ${selectedSize === size ? "bg-black text-white" : ""}`}
@@ -75,6 +74,11 @@ const Productpage = () => {
             Buy it Now
           </button>
         </div>
+
+        {/* Add a small text below to inform the user */}
+        <p className="text-[10px] text-gray-500 mt-6">
+          *Add product to the cart before proceeding to buy .
+        </p>
       </div>
     </section>
   );

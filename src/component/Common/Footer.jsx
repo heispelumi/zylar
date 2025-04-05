@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='px-8'>
+    <div className='px-4 md:px-8'>
 
       <div className='flex justify-between '>
         {/* Text */}

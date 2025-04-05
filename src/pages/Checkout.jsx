@@ -37,14 +37,14 @@ const Checkout = () => {
   console.log("Cart Items:", cart); // Debugging check
 
   return (
-    <div className="min-h-screen pb-[400px] bg-gradient-to-br from-gray-100 via-white to-gray-200 text-gray-900 p-6 md:p-12">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div className="h-full pb-[80px] bg-gradient-to-br from-gray-100 via-white to-gray-200 text-gray-900 p-6 md:p-12">
+      <div className="max-w-6xl  mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Form Section */}
-        <div className="bg-white  p-6">
+        <div className="bg-white shadow-lg rounded-2xl   p-6">
           <h1 className="text-3xl pb-6 font-bold brand">ZYLAR</h1>
 
           {/* Contact Info */}
-          <h3 className="text-lg font-semibold mb-2">Contact</h3>
+          <h3 className="text-lg font-semibold poppins mb-2">Contact</h3>
           <input
             type="email"
             name="email"
@@ -63,14 +63,14 @@ const Checkout = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, emailOffers: e.target.checked })
                 }
-                className="mr-2"
+                className="mr-2 poppins"
               />
               Email me with news and offers
             </label>
           </div>
 
           {/* Delivery Section */}
-          <h3 className="text-lg font-semibold mb-2">Delivery</h3>
+          <h3 className="text-lg font-semibold py-4 poppins mb-2">Delivery</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <input
               type="text"
@@ -107,7 +107,7 @@ const Checkout = () => {
             />
             <select
               name="state"
-              className="w-full px-4 py-2 border rounded-lg appearance-none bg-white text-gray-900"
+              className="w-full px-4 py-2 border rounded-lg text-[12px] md:text-[20px] appearance-none bg-white text-gray-900"
               value={formData.state}
               onChange={handleChange}
               style={{
@@ -232,7 +232,7 @@ const Checkout = () => {
             </motion.p>
 
             <h3 className="text-lg font-semibold mt-6 mb-2">Payment</h3>
-          <p className="text-sm mt-8 text-gray-600 mb-3">
+          <p className="text-sm mt-8 pb-3 text-gray-600 mb-3">
             All transactions are secure and encrypted.
           </p>
 
