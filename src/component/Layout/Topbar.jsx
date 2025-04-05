@@ -19,7 +19,7 @@ const Topbar = () => {
 
           .animate-marquee {
             display: inline-block;
-            animation: marquee 20s linear infinite;
+            animation: marquee 10s linear infinite;
             min-width: 100vw; /* Ensures text moves fully across */
           }
         `}
