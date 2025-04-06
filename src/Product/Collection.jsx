@@ -83,7 +83,7 @@ const Collections = () => {
             <div className="flex justify-end mt-6">
               <Link
                 to="/allproducts"
-                className="bg-black text-white px-6 poppins py-2  hover:bg-gray-800 transition"
+                className="bg-black hover:bg-orange-500 text-white px-6 poppins py-2 transition"
               >
                 View All
               </Link>

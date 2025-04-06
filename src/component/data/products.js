@@ -23,7 +23,7 @@ const products = [
     image: "https://i.pinimg.com/474x/7d/ca/1f/7dca1f45b7a97eb00a76e54c2ed98118.jpg",
   },
   {
-    id: 10,
+    id: 4,
     name: "A-star Sports Jacket",
     category: "Shirts",
     gender: "Men",
@@ -31,7 +31,24 @@ const products = [
     image: "https://i.pinimg.com/736x/2e/58/5b/2e585bb0a8f139df805daa9c0a9bb36c.jpg",
   },
   {
-    id: 4,
+    id: 15,
+    name: "Antidote Tee -White",
+    category: "Shirts",
+    gender: "Men",
+    price: 60000,
+    image: "https://i.pinimg.com/736x/dc/63/5f/dc635f94e503e9ef0cdf12c1165721e8.jpg",
+  },
+  {
+    id: 13,
+    name: "Observe -Black",
+    category: "Shirts",
+    gender: "Men",
+    price: 120000,
+    image: "https://i.pinimg.com/736x/84/be/eb/84beeb857789a030b49035df81c4e602.jpg",
+  },
+  
+  {
+    id: 5,
     name: "Maximalist Cap",
     category: "Caps",
     gender: "Men",
@@ -39,7 +56,7 @@ const products = [
     image: "https://i.pinimg.com/474x/a8/42/9a/a8429a4bcb51559abcd74cbd3c8ca003.jpg",
   },
   {
-    id: 5,
+    id: 6,
     name: "Hypeastro Punk Graphic T Shirt",
     category: "Shirts",
     gender: "Men",
@@ -47,21 +64,21 @@ const products = [
     image: "https://i.pinimg.com/736x/0d/a8/6a/0da86aa5bd7f78fd9cff450273a9541f.jpg",
   },
   {
-    id: 6,
+    id: 7,
     name: "Cozy Hoodie -Pink",
     category: "Hoodies",
     price: 105000,
     image: "https://i.pinimg.com/736x/87/c0/d1/87c0d1f915d23a9f2ef83054c3d2bf7c.jpg",
   },
   {
-    id: 7,
+    id: 8,
     name: "Rugged Cap",
     category: "Caps",
     price: 30000,
     image: "https://i.pinimg.com/474x/8a/9e/b8/8a9eb8e8f6a7f83884833802c8af4b34.jpg",
   },
   {
-    id: 8,
+    id: 9,
     name: "Crop Top Women -White",
     category: "Shirts",
     gender: "Women",
@@ -69,7 +86,7 @@ const products = [
     image: "https://i.pinimg.com/474x/b3/1d/8c/b31d8ca8501a5da0b2a7662df9c736a2.jpg",
   },
   {
-    id: 9,
+    id: 10,
     name: "Futuristic Zip Hoodie",
     category: "Hoodies",
     gender: "Men",
@@ -77,7 +94,7 @@ const products = [
     image: "https://i.pinimg.com/736x/56/64/6d/56646d3a448810e87229b9f7b7b796c5.jpg",
   },
   {
-    id: 10,
+    id: 11,
     name: "Bucket Hat",
     category: "Caps",
     gender: "Unisex",
@@ -85,7 +102,7 @@ const products = [
     image: "https://i.pinimg.com/474x/e8/b8/ee/e8b8ee479a436c121020085882026ff9.jpg",
   },
   {
-    id: 11,
+    id: 12,
     name: "Saints Crop Top",
     category: "Shirts",
     price: 50000,
